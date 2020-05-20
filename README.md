@@ -47,4 +47,5 @@ convert_to_favicon(image = "www.this.in.an.image.com",
 The favicon design can be customised for lots of different platforms.
 When specifying the properties for each platform, use the `*_helper()`
 functions to easily provide the required parameters. To exclude a
-platform, just set the parameter for that platform to `NULL`.
+platform, just set the parameter for that platform to `NULL`
+(e.g. `yandex_browser = NULL`).
