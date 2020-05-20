@@ -81,6 +81,7 @@ windows_helper <- function(picture_aspect = c("no_change", "white_silhouette"),
 
 
 #' Create Firefox favicon parameters
+#'
 #' This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
 #' to the API.
 #' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
@@ -124,6 +125,7 @@ firefox_app_helper <- function(picture_aspect = c("no_change","circle", "rounded
 }
 
 #' Create Android Chrome favicon parameters
+#'
 #' This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
 #' to the API.
 #' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
@@ -195,6 +197,7 @@ safari_pinned_tab_helper <- function(picture_aspect = c("no_change", "silhouette
 }
 
 #' Create Cost favicon parameters
+#'
 #' This function helps with the creation of the list structure required to provide Coast-specific favicon parameters
 #' to the API.
 #' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
@@ -231,6 +234,7 @@ open_graph_helper <- function(picture_aspect = c("no_change", "background_and_ma
 }
 
 #' Create Yandex favicon parameters
+#'
 #' This function helps with the creation of the list structure required to provide Yandex-specific favicon parameters
 #' to the API.
 #' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
