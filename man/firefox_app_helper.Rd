@@ -2,10 +2,7 @@
 % Please edit documentation in R/helper.R
 \name{firefox_app_helper}
 \alias{firefox_app_helper}
-\title{Create Firefox favicon parameters
-This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
-to the API.
-Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
+\title{Create Firefox favicon parameters}
 \usage{
 firefox_app_helper(
   picture_aspect = c("no_change", "circle", "rounded_square", "square"),
@@ -28,7 +25,6 @@ developer_name; the developer name, developer_url; the developer url, existing_m
 and on_conflict; what to do if existing manifest conflicts with created manifest}
 }
 \description{
-Create Firefox favicon parameters
 This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
 to the API.
 Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}

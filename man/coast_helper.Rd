@@ -2,10 +2,7 @@
 % Please edit documentation in R/helper.R
 \name{coast_helper}
 \alias{coast_helper}
-\title{Create Cost favicon parameters
-This function helps with the creation of the list structure required to provide Coast-specific favicon parameters
-to the API.
-Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
+\title{Create Cost favicon parameters}
 \usage{
 coast_helper(
   picture_aspect = c("no_change", "background_and_margin"),
@@ -22,7 +19,6 @@ parameters can be used}
 \item{background_color;}{character; hex color string. Only used if 'picture_aspect' is 'background_and_margin'}
 }
 \description{
-Create Cost favicon parameters
 This function helps with the creation of the list structure required to provide Coast-specific favicon parameters
 to the API.
 Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}

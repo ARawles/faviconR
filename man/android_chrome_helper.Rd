@@ -2,10 +2,7 @@
 % Please edit documentation in R/helper.R
 \name{android_chrome_helper}
 \alias{android_chrome_helper}
-\title{Create Android Chrome favicon parameters
-This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
-to the API.
-Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
+\title{Create Android Chrome favicon parameters}
 \usage{
 android_chrome_helper(
   picture_aspect = c("no_change", "background_and_margin", "shadow"),
@@ -36,7 +33,6 @@ between the provided and generated manifest}
 whether to include all documented icons or just recommended high res icons}
 }
 \description{
-Create Android Chrome favicon parameters
 This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
 to the API.
 Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
