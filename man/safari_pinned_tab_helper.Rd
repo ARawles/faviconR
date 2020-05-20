@@ -2,10 +2,7 @@
 % Please edit documentation in R/helper.R
 \name{safari_pinned_tab_helper}
 \alias{safari_pinned_tab_helper}
-\title{Create Safari pinned tab favicon parameters
-This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
-to the API.
-Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
+\title{Create Safari pinned tab favicon parameters}
 \usage{
 safari_pinned_tab_helper(
   picture_aspect = c("no_change", "silhouette", "black_and_white"),
@@ -22,7 +19,6 @@ how to turn colours to black/white. If 'no_change', image must be a SVG file.}
 \item{theme_color}{character; hex color value of the theme colour - usually the dominant color of the master picture}
 }
 \description{
-Create Safari pinned tab favicon parameters
 This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
 to the API.
 Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}

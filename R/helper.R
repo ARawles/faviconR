@@ -178,6 +178,7 @@ android_chrome_helper <- function(picture_aspect = c("no_change", "background_an
 }
 
 #' Create Safari pinned tab favicon parameters
+#'
 #' This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
 #' to the API.
 #' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
