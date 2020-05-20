@@ -6,7 +6,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Save the favicon hosted on the realfavicongenerator.net servers — save_file • faviconR</title>
+<title>Build the versioning part of the request
+This function helps with the creation of the versioning list used in the API request.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — build_versioning • faviconR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +48,12 @@
 
 
 
-<meta property="og:title" content="Save the favicon hosted on the realfavicongenerator.net servers — save_file" />
-<meta property="og:description" content="Save the favicon hosted on the realfavicongenerator.net servers" />
+<meta property="og:title" content="Build the versioning part of the request
+This function helps with the creation of the versioning list used in the API request.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — build_versioning" />
+<meta property="og:description" content="Build the versioning part of the request
+This function helps with the creation of the versioning list used in the API request.
+Further details can be found in the realfavicongenerator.net API documentation" />
 <meta property="og:image" content="http://favicongenerator.arawles.co.uk/logo.png" />
 
 
@@ -122,33 +128,38 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Save the favicon hosted on the realfavicongenerator.net servers</h1>
+    <h1>Build the versioning part of the request
+This function helps with the creation of the versioning list used in the API request.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
     
-    <div class="hidden name"><code>save_file.Rd</code></div>
+    <div class="hidden name"><code>build_versioning.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Save the favicon hosted on the realfavicongenerator.net servers</p>
+    <p>Build the versioning part of the request
+This function helps with the creation of the versioning list used in the API request.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
     </div>
 
-    <pre class="usage"><span class='fu'>save_file</span>(<span class='no'>url</span>, <span class='no'>save_loc</span>)</pre>
+    <pre class="usage"><span class='fu'>build_versioning</span>(<span class='kw'>versioning</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>param_name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>param_value</span> <span class='kw'>=</span> <span class='kw'>NULL</span>)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>url</th>
-      <td><p>character; url of the favicon</p></td>
+      <th>versioning</th>
+      <td><p>logical; whether to version the files</p></td>
     </tr>
     <tr>
-      <th>save_loc</th>
-      <td><p>character; directory to save the favicon to</p></td>
+      <th>param_name</th>
+      <td><p>character; versioning prefix. Only used if 'versioning' is TRUE</p></td>
+    </tr>
+    <tr>
+      <th>param_value</th>
+      <td><p>character; version. Only used if 'versioning' is TRUE</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>path to file is returned invisibly</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

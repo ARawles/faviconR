@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Save the favicon hosted on the realfavicongenerator.net servers — save_file • faviconR</title>
+<title>Build the settings part of the request — build_settings • faviconR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +46,9 @@
 
 
 
-<meta property="og:title" content="Save the favicon hosted on the realfavicongenerator.net servers — save_file" />
-<meta property="og:description" content="Save the favicon hosted on the realfavicongenerator.net servers" />
+<meta property="og:title" content="Build the settings part of the request — build_settings" />
+<meta property="og:description" content="This function helps with the creation of the settings list used in the API request.
+Further details can be found in the realfavicongenerator.net API documentation" />
 <meta property="og:image" content="http://favicongenerator.arawles.co.uk/logo.png" />
 
 
@@ -122,33 +123,56 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Save the favicon hosted on the realfavicongenerator.net servers</h1>
+    <h1>Build the settings part of the request</h1>
     
-    <div class="hidden name"><code>save_file.Rd</code></div>
+    <div class="hidden name"><code>build_settings.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Save the favicon hosted on the realfavicongenerator.net servers</p>
+    <p>This function helps with the creation of the settings list used in the API request.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
     </div>
 
-    <pre class="usage"><span class='fu'>save_file</span>(<span class='no'>url</span>, <span class='no'>save_loc</span>)</pre>
+    <pre class="usage"><span class='fu'>build_settings</span>(
+  <span class='kw'>compression</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"0"</span>, <span class='st'>"1"</span>, <span class='st'>"2"</span>, <span class='st'>"3"</span>, <span class='st'>"4"</span>, <span class='st'>"5"</span>),
+  <span class='kw'>scaling_algorithm</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"Mitchell"</span>, <span class='st'>"NearestNeighbor"</span>, <span class='st'>"Cubic"</span>, <span class='st'>"Bilinear"</span>, <span class='st'>"Lanczos"</span>,
+    <span class='st'>"Spline"</span>),
+  <span class='kw'>error_on_image_too_small</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
+  <span class='kw'>readme_file</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>html_code_file</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>,
+  <span class='kw'>use_path_as_is</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>
+)</pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>url</th>
-      <td><p>character; url of the favicon</p></td>
+      <th>compression</th>
+      <td><p>character; 1-5 level of compression (5 = higest)</p></td>
     </tr>
     <tr>
-      <th>save_loc</th>
-      <td><p>character; directory to save the favicon to</p></td>
+      <th>scaling_algorithm</th>
+      <td><p>character; which scaling algorithm to use. One of "Mitchell", "NearestNeighbor", "Cubic", "Bilinear", "Lanczos", "Spline"</p></td>
+    </tr>
+    <tr>
+      <th>error_on_image_too_small</th>
+      <td><p>logical; whether to error if an icon cannot be produced because the image is too small</p></td>
+    </tr>
+    <tr>
+      <th>readme_file</th>
+      <td><p>logical; whether to inclued a README.md file to summarise the package manual installation steps</p></td>
+    </tr>
+    <tr>
+      <th>html_code_file</th>
+      <td><p>logical; whether to generate a html_code.html file which contains the icons' HTML markups</p></td>
+    </tr>
+    <tr>
+      <th>use_path_as_is</th>
+      <td><p>logical; FALSE lets RealFaviconGenerator decide the paths for you. TRUE forces RealFaviconGenerator to insert
+the path everywhere. Refer to the <a href='https://realfavicongenerator.net/api/non_interactive_api'>API documentation</a> for more.</p></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
-
-    <p>path to file is returned invisibly</p>
 
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">

@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — windows_helper • faviconR</title>
+<title>Create Windows favicon parameters — windows_helper • faviconR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +46,10 @@
 
 
 
-<meta property="og:title" content="Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — windows_helper" />
-<meta property="og:description" content="Further details can be found in the realfavicongenerator.net API documentation" />
+<meta property="og:title" content="Create Windows favicon parameters — windows_helper" />
+<meta property="og:description" content="This function helps with the creation of the list structure required to provide Windows-specific favicon parameters
+to the API.
+Further details can be found in the realfavicongenerator.net API documentation" />
 <meta property="og:image" content="http://favicongenerator.arawles.co.uk/logo.png" />
 
 
@@ -80,7 +82,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">faviconR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9000</span>
       </span>
     </div>
 
@@ -122,18 +124,20 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
+    <h1>Create Windows favicon parameters</h1>
     
     <div class="hidden name"><code>windows_helper.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
+    <p>This function helps with the creation of the list structure required to provide Windows-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
     </div>
 
     <pre class="usage"><span class='fu'>windows_helper</span>(
   <span class='kw'>picture_aspect</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"no_change"</span>, <span class='st'>"white_silhouette"</span>),
-  <span class='kw'>background_colour</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(),
+  <span class='kw'>background_colour</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>assets</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>windows_80_ie_tile</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>windows_10_ie_11_edge_tiles</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>small</span> <span class='kw'>=</span>
     <span class='fl'>FALSE</span>, <span class='kw'>medium</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>big</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>, <span class='kw'>rectange</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)),
   <span class='kw'>existing_manifest</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
@@ -141,6 +145,38 @@
   <span class='kw'>app_name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>
 )</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>picture_aspect</th>
+      <td><p>character; one of 'no_change' or 'white_silhouette'. 'no_change' leaves master picture as is, and 'white_silhouette'
+adds a white silhouette</p></td>
+    </tr>
+    <tr>
+      <th>assets</th>
+      <td><p>list; embedded list for which icons to generate. List is made up of two entries; 'windows_80_ie_tile' which
+must be TRUE or FALSE. Second entry must be a list named 'windows_10_ie_11_edge_tiles' containing TRUE or FALSE values
+for each of 'small', 'medium', 'big', 'rectangle'</p></td>
+    </tr>
+    <tr>
+      <th>existing_manifest</th>
+      <td><p>list; if there is an existing browserconfig.xml file then this can be passed via this parameter.</p></td>
+    </tr>
+    <tr>
+      <th>on_conflict</th>
+      <td><p>character; must be one of 'raise_error', 'override', or 'keep_existing' that defines what to do if the existing
+manifest contains entries that the API creates</p></td>
+    </tr>
+    <tr>
+      <th>app_name</th>
+      <td><p>character; when provided, this will be the app name used on the home screen caption instead of the page title</p></td>
+    </tr>
+    <tr>
+      <th>background_color</th>
+      <td><p>character; background color to apply as hex, or NULL for none</p></td>
+    </tr>
+    </table>
 
 
   </div>

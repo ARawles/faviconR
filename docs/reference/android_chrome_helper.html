@@ -6,7 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — android_chrome_helper • faviconR</title>
+<title>Create Android Chrome favicon parameters
+This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — android_chrome_helper • faviconR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +49,14 @@
 
 
 
-<meta property="og:title" content="Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — android_chrome_helper" />
-<meta property="og:description" content="Further details can be found in the realfavicongenerator.net API documentation" />
+<meta property="og:title" content="Create Android Chrome favicon parameters
+This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — android_chrome_helper" />
+<meta property="og:description" content="Create Android Chrome favicon parameters
+This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
+to the API.
+Further details can be found in the realfavicongenerator.net API documentation" />
 <meta property="og:image" content="http://favicongenerator.arawles.co.uk/logo.png" />
 
 
@@ -80,7 +89,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">faviconR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9000</span>
       </span>
     </div>
 
@@ -122,24 +131,62 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
+    <h1>Create Android Chrome favicon parameters
+This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
     
     <div class="hidden name"><code>android_chrome_helper.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
+    <p>Create Android Chrome favicon parameters
+This function helps with the creation of the list structure required to provide Android Chrome-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
     </div>
 
     <pre class="usage"><span class='fu'>android_chrome_helper</span>(
   <span class='kw'>picture_aspect</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"no_change"</span>, <span class='st'>"background_and_margin"</span>, <span class='st'>"shadow"</span>),
+  <span class='kw'>margin</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
+  <span class='kw'>background_color</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>manifest</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>name</span> <span class='kw'>=</span> <span class='st'>""</span>, <span class='kw'>start_url</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>display</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"browser"</span>, <span class='st'>"standalone"</span>),
     <span class='kw'>orientation</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"portrait"</span>, <span class='st'>"landscape"</span>), <span class='kw'>theme_color</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>existing_manifest</span> <span class='kw'>=</span>
-    <span class='kw'>NULL</span>),
-  <span class='kw'>on_conflict</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"raise_error"</span>, <span class='st'>"override"</span>, <span class='st'>"keep_existing"</span>),
+    <span class='kw'>NULL</span>, <span class='kw'>on_conflict</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"raise_error"</span>, <span class='st'>"override"</span>, <span class='st'>"keep_existing"</span>)),
   <span class='kw'>assets</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>legacy_icon</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>, <span class='kw'>low_resolution_icons</span> <span class='kw'>=</span> <span class='fl'>FALSE</span>)
 )</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>picture_aspect</th>
+      <td><p>character; one of 'no_change', 'background_and_margin' or 'shadow'. If 'background_and_margin', then
+background_color and margin parameters can be used</p></td>
+    </tr>
+    <tr>
+      <th>margin</th>
+      <td><p>character; margin in pixels or percentage. only used if picture_aspect is 'background_and_margin'</p></td>
+    </tr>
+    <tr>
+      <th>background_color</th>
+      <td><p>character; hex color. Only used if picture_aspect is 'background_and_margin'</p></td>
+    </tr>
+    <tr>
+      <th>manifest</th>
+      <td><p>list; list of manifest details. Should be a named list containing name; the application name
+(this cannot be NULL), start_url; the page that's actually added to the homescreen, display; one of 'browser' where the
+page is opened in a new Chrome tab or 'standalone' where the website is treated like a new application, orientation;
+orientation to force the screen if display is standalone, theme_color; color applied to the app when susing task switcher,
+existing_manifest; if there an existing manifest, it can be provided here, and on_conflict; what to do when there's a conflict
+between the provided and generated manifest</p></td>
+    </tr>
+    <tr>
+      <th>assets</th>
+      <td><p>list; list containing two TRUE/FALSE values: legacy_icon; whether to include a legacy icon, and low_resolution_icons;
+whether to include all documented icons or just recommended high res icons</p></td>
+    </tr>
+    </table>
 
 
   </div>

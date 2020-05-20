@@ -6,7 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — firefox_app_helper • faviconR</title>
+<title>Create Firefox favicon parameters
+This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — firefox_app_helper • faviconR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +49,14 @@
 
 
 
-<meta property="og:title" content="Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — firefox_app_helper" />
-<meta property="og:description" content="Further details can be found in the realfavicongenerator.net API documentation" />
+<meta property="og:title" content="Create Firefox favicon parameters
+This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — firefox_app_helper" />
+<meta property="og:description" content="Create Firefox favicon parameters
+This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
+to the API.
+Further details can be found in the realfavicongenerator.net API documentation" />
 <meta property="og:image" content="http://favicongenerator.arawles.co.uk/logo.png" />
 
 
@@ -80,7 +89,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">faviconR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9000</span>
       </span>
     </div>
 
@@ -122,13 +131,19 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
+    <h1>Create Firefox favicon parameters
+This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
     
     <div class="hidden name"><code>firefox_app_helper.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
+    <p>Create Firefox favicon parameters
+This function helps with the creation of the list structure required to provide Firefox-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
     </div>
 
     <pre class="usage"><span class='fu'>firefox_app_helper</span>(
@@ -139,11 +154,25 @@
   <span class='kw'>circle_inner_margin</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>overlay</span> <span class='kw'>=</span> <span class='fl'>TRUE</span>,
   <span class='kw'>manifest</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/list.html'>list</a></span>(<span class='kw'>app_name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>app_description</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>developer_name</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-    <span class='kw'>developer_url</span> <span class='kw'>=</span> <span class='kw'>NULL</span>),
-  <span class='kw'>existing_manifest</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
-  <span class='kw'>on_conflict</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"raise_error"</span>, <span class='st'>"override"</span>, <span class='st'>"keep_existing"</span>)
+    <span class='kw'>developer_url</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>existing_manifest</span> <span class='kw'>=</span> <span class='kw'>NULL</span>, <span class='kw'>on_conflict</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"raise_error"</span>,
+    <span class='st'>"override"</span>, <span class='st'>"keep_existing"</span>))
 )</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>picture_aspect</th>
+      <td><p>character; one of 'no_change', 'circle', 'rounded_square' or 'square'. If 'circle' is chosen, background_color,
+margin, keep_picture_in_circle, circle_inner_margin and overlay parameters can all be used.</p></td>
+    </tr>
+    <tr>
+      <th>manifest</th>
+      <td><p>list; list of manifest attributes. Should contain app_name; the app's name, app_description; a description of the app,
+developer_name; the developer name, developer_url; the developer url, existing_manifest; an existing manifest file that can be passed,
+and on_conflict; what to do if existing manifest conflicts with created manifest</p></td>
+    </tr>
+    </table>
 
 
   </div>

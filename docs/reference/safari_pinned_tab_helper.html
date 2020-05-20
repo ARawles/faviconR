@@ -6,7 +6,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — safari_pinned_tab_helper • faviconR</title>
+<title>Create Safari pinned tab favicon parameters
+This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — safari_pinned_tab_helper • faviconR</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +49,14 @@
 
 
 
-<meta property="og:title" content="Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — safari_pinned_tab_helper" />
-<meta property="og:description" content="Further details can be found in the realfavicongenerator.net API documentation" />
+<meta property="og:title" content="Create Safari pinned tab favicon parameters
+This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a> — safari_pinned_tab_helper" />
+<meta property="og:description" content="Create Safari pinned tab favicon parameters
+This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
+to the API.
+Further details can be found in the realfavicongenerator.net API documentation" />
 <meta property="og:image" content="http://favicongenerator.arawles.co.uk/logo.png" />
 
 
@@ -80,7 +89,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">faviconR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.9000</span>
       </span>
     </div>
 
@@ -122,20 +131,44 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
+    <h1>Create Safari pinned tab favicon parameters
+This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></h1>
     
     <div class="hidden name"><code>safari_pinned_tab_helper.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
+    <p>Create Safari pinned tab favicon parameters
+This function helps with the creation of the list structure required to provide Safari-specific favicon parameters
+to the API.
+Further details can be found in the <a href='https://realfavicongenerator.net/api/non_interactive_api'>realfavicongenerator.net API documentation</a></p>
     </div>
 
     <pre class="usage"><span class='fu'>safari_pinned_tab_helper</span>(
   <span class='kw'>picture_aspect</span> <span class='kw'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span>(<span class='st'>"no_change"</span>, <span class='st'>"silhouette"</span>, <span class='st'>"black_and_white"</span>),
+  <span class='kw'>threshold</span> <span class='kw'>=</span> <span class='kw'>NULL</span>,
   <span class='kw'>theme_color</span> <span class='kw'>=</span> <span class='kw'>NULL</span>
 )</pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>picture_aspect</th>
+      <td><p>character; one of 'no_change', 'silhouette' or 'black_and_white'. If 'black_and_white', use threshold to indicate
+how to turn colours to black/white. If 'no_change', image must be a SVG file.</p></td>
+    </tr>
+    <tr>
+      <th>threshold</th>
+      <td><p>character; value of 0 to 100 which determines how colours are changed to black/white</p></td>
+    </tr>
+    <tr>
+      <th>theme_color</th>
+      <td><p>character; hex color value of the theme colour - usually the dominant color of the master picture</p></td>
+    </tr>
+    </table>
 
 
   </div>
