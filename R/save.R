@@ -1,3 +1,4 @@
+#' @export
 save_file <- function(url, save_loc) {
   tmp <- tempfile()
   on.exit(unlink(tmp))

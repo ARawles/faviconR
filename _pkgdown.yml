@@ -1,4 +1,32 @@
 destination: docs
+reference:
+- title: "Generate Favicon"
+  desc: "Perform a full API request (build, send, parse and save)"
+- contents:
+  - generate_favicon
+- title: "Build"
+  desc: "Functions for building parts of the API call."
+- contents:
+  - starts_with("build")
+- title: "Send"
+  desc: "Functions for sending API requests."
+- contents:
+  - send_request
+- title: "Parse and Save"
+  desc: "Functions to parse and save the API responses"
+- contents:
+  - parse_response
+  - save_file
+- title: "Helper"
+  desc: "Helper functions used to build platform-specific parameters."
+- contents:
+  - ends_with("_helper")
+- title: "Utility"
+  desc: "Misc. utility functions"
+- contents:
+  - local_image
+  - url_image
+  - remove_null_list
 authors:
   Adam Rawles:
     href: http://arawles.co.uk
