@@ -50,7 +50,7 @@ generate_favicon <- function(image, save_loc, api_key = NULL,
   resp <- send_request(json_request)
 
   if (httr::http_error(resp)) {
-    error(paste0("There was an error. Response code was ", httr::status_code(resp)))
+    stop(paste0("There was an error. Response code was ", httr::status_code(resp)))
   }
 
   parsed <- parse_response(resp)
