@@ -2,9 +2,7 @@
 % Please edit documentation in R/build.R
 \name{build_versioning}
 \alias{build_versioning}
-\title{Build the versioning part of the request
-This function helps with the creation of the versioning list used in the API request.
-Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
+\title{Build the versioning part of the request}
 \usage{
 build_versioning(versioning = FALSE, param_name = NULL, param_value = NULL)
 }
@@ -16,7 +14,6 @@ build_versioning(versioning = FALSE, param_name = NULL, param_value = NULL)
 \item{param_value}{character; version. Only used if 'versioning' is TRUE}
 }
 \description{
-Build the versioning part of the request
 This function helps with the creation of the versioning list used in the API request.
 Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 }
