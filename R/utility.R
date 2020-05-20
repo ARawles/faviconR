@@ -5,7 +5,7 @@
 #' @return list; list containing the embedded image and required extra parameters needed for the JSON request
 #' @export
 local_image <- function(image_path) {
-  image <- readBin(logo_path, what = "raw", n = fs::file_info(image_path)$size)
+  image <- readBin(image_path, what = "raw", n = fs::file_info(image_path)$size)
 
   list(
     type = "inline",
