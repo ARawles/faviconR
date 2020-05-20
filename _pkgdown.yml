@@ -27,6 +27,7 @@ reference:
   - local_image
   - url_image
   - remove_null_list
+  - remove_empty_list
 authors:
   Adam Rawles:
     href: http://arawles.co.uk

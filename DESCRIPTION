@@ -12,5 +12,6 @@ Imports:
     httr,
     openssl,
     fs,
-    plyr
+    plyr,
+    tools
 RoxygenNote: 7.1.0

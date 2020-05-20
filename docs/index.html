@@ -91,14 +91,14 @@
 <p>The main function in the package is <code><a href="reference/generate_favicon.html">generate_favicon()</a></code>. This function uses a number of helper functions to build your request, send it, and save the response:</p>
 <div class="sourceCode" id="cb2"><pre class="r"><span class="fu">convert_to_favicon</span>(<span class="kw">image</span> <span class="kw">=</span> <span class="st">"www.this.in.an.image.com"</span>,
                    <span class="kw">save_loc</span> <span class="kw">=</span> <span class="st">"C:/Users/me/Downloads"</span>,
-                   <span class="kw">favicon_design</span> <span class="kw">=</span> <span class="fu"><a href="reference/build_favicon_design.html">build_favicon_design</a></span>(<span class="kw">ios</span> <span class="kw">=</span> <span class="fu">ios_helper</span>(),
-                                                         <span class="kw">windows</span> <span class="kw">=</span> <span class="fu">windows_helper</span>(),
-                                                         <span class="kw">firefox_app</span> <span class="kw">=</span> <span class="fu">firefox_app_helper</span>(),
-                                                         <span class="kw">android_chrome</span> <span class="kw">=</span> <span class="fu">android_chrome_helper</span>(),
-                                                         <span class="kw">safari_pinned_tab</span> <span class="kw">=</span> <span class="fu">safari_pinned_tab_helper</span>(),
-                                                         <span class="kw">coast</span> <span class="kw">=</span> <span class="fu">coast_helper</span>(),
-                                                         <span class="kw">open_graph</span> <span class="kw">=</span> <span class="fu">open_graph_helper</span>(),
-                                                         <span class="kw">yandex_browser</span> <span class="kw">=</span> <span class="fu">yandex_browser_helper</span>())
+                   <span class="kw">favicon_design</span> <span class="kw">=</span> <span class="fu"><a href="reference/build_favicon_design.html">build_favicon_design</a></span>(<span class="kw">ios</span> <span class="kw">=</span> <span class="fu"><a href="reference/ios_helper.html">ios_helper</a></span>(),
+                                                         <span class="kw">windows</span> <span class="kw">=</span> <span class="fu"><a href="reference/windows_helper.html">windows_helper</a></span>(),
+                                                         <span class="kw">firefox_app</span> <span class="kw">=</span> <span class="fu"><a href="reference/firefox_app_helper.html">firefox_app_helper</a></span>(),
+                                                         <span class="kw">android_chrome</span> <span class="kw">=</span> <span class="fu"><a href="reference/android_chrome_helper.html">android_chrome_helper</a></span>(),
+                                                         <span class="kw">safari_pinned_tab</span> <span class="kw">=</span> <span class="fu"><a href="reference/safari_pinned_tab_helper.html">safari_pinned_tab_helper</a></span>(),
+                                                         <span class="kw">coast</span> <span class="kw">=</span> <span class="fu"><a href="reference/coast_helper.html">coast_helper</a></span>(),
+                                                         <span class="kw">open_graph</span> <span class="kw">=</span> <span class="fu"><a href="reference/open_graph_helper.html">open_graph_helper</a></span>(),
+                                                         <span class="kw">yandex_browser</span> <span class="kw">=</span> <span class="fu"><a href="reference/yandex_browser_helper.html">yandex_browser_helper</a></span>())
 )</pre></div>
 <p>The favicon design can be customised for lots of different platforms. When specifying the properties for each platform, use the <code>*_helper()</code> functions to easily provide the required parameters. To exclude a platform, just set the parameter for that platform to <code>NULL</code>.</p>
 </div>

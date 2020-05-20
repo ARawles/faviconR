@@ -37,6 +37,13 @@ generate_favicon <- function(image, save_loc, api_key = NULL,
     type <- override_type
   }
 
+  image_type <- tools::file_ext(image)
+
+  if (image_type != "svg" & !is.null(favicon_design$safari_pinned_tab)) {
+    warning("File must be an SVG for safari_pinned_tab favicon. Removing safari_pinned_tab section of request.")
+    favicon_design$safari_pinned_tab <- NULL
+  }
+
   json_request <- build_json_request(api_key = api_key,
                      master_picture = build_master_picture(
                        type = type,

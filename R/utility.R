@@ -37,3 +37,13 @@ remove_null_list <- function(...) {
   raw_list <- list(...)
   plyr::compact(raw_list)
 }
+
+#' Create a list excluding empty elements
+#'
+#' @param ... values to be coerced to a list
+#' @return list; list without empty values
+#' @export
+remove_empty_list <- function(...) {
+  raw_list <- list(...)
+  raw_list[!vapply(raw_list, Negate(length), NA)]
+}

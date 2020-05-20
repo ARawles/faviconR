@@ -12,14 +12,14 @@
 #' @return list; list containing the complete request to be converted to JSON and posted
 #' @export
 build_json_request <- function(api_key, master_picture, favicon_design, settings, versioning) {
-  list(
+  remove_empty_list(
     "favicon_generation" = list(
       "api_key" = api_key,
       "master_picture" = master_picture,
-      "favicon_design" = favicon_design,
-      "settings" = settings,
-      "versioning" = versioning
-    )
+      "favicon_design" = favicon_design),
+
+    "settings" = settings,
+    "versioning" = versioning
   )
 }
 
