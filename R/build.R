@@ -74,7 +74,7 @@ build_favicon_design <- function(ios = ios_helper(), windows = windows_helper(),
 }
 
 #'
-build_settings <- function(compression = c(0:5),
+build_settings <- function(compression = c("0", "1", "2", "3", "4", "5"),
                            scaling_algorithm = c("Mitchell", "NearestNeighbor", "Cubic", "Bilinear", "Lanczos", "Spline"),
                            error_on_image_too_small = TRUE,
                            readme_file = FALSE,
