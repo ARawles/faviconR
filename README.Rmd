@@ -22,11 +22,13 @@ The goal of faviconR is to provide some simple wrapper functions to the [realfav
 
 ## Installation
 
-Currently, faviconGeneratoR is only available from GitHub. To install, use the `devtools` package:
+Currently, faviconR is only available from GitHub. To install, use the `devtools` or `remotes` packages:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ARawles/faviconGeneratoR")
+# devtools::install_github("ARawles/faviconR")
+# install.packages("remotes")
+remotes::install_github("ARawles/faviconR)
 ```
 ## Example
 

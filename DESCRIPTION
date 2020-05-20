@@ -1,7 +1,7 @@
 Package: faviconR
 Type: Package
 Title: Wrapper Functions to the 'realfavicongenerator.net API'
-Version: 0.1.0
+Version: 0.0.9000
 Author: Adam Rawles
 Maintainer: Adam Rawles <adamrawles@hotmail.co.uk>
 Description: A lightweight set of functions to interact with the realfavicongenerator.net API to generate favicons.

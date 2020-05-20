@@ -15,11 +15,13 @@ local or online images.
 ## Installation
 
 Currently, faviconR is only available from GitHub. To install, use the
-`devtools` package:
+`devtools` or `remotes` packages:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ARawles/faviconR")
+# devtools::install_github("ARawles/faviconR")
+# install.packages("remotes")
+remotes::install_github("ARawles/faviconR)
 ```
 
 ## Example
