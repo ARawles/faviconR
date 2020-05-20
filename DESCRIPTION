@@ -11,4 +11,5 @@ LazyData: true
 Imports: 
     httr,
     openssl,
-    fs
+    fs,
+    plyr

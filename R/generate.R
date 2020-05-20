@@ -1,4 +1,6 @@
-convert_to_favicon <- function(image, save_loc, api_key = NULL, override_type = NULL) {
+generate_favicon <- function(image, save_loc, api_key = NULL,
+                               override_type = NULL, favicon_design = build_favicon_design(),
+                               settings = build_settings(), versioning = build_versioning()) {
   if (is.null(api_key)) {
     api_key <- get_api_key()
   }
@@ -9,6 +11,8 @@ convert_to_favicon <- function(image, save_loc, api_key = NULL, override_type = 
     } else {
       type <- "local"
     }
+  } else {
+    type <- override_type
   }
 
   json_request <- build_json_request(api_key = api_key,
@@ -16,12 +20,14 @@ convert_to_favicon <- function(image, save_loc, api_key = NULL, override_type = 
                        type = type,
                        value = image
                      ),
-                     favicon_design = build_favicon_design(
-
-                     )
+                     favicon_design = favicon_design
   )
 
   resp <- send_request(json_request)
+
+  if (httr::http_error(resp)) {
+    error(paste0("There was an error. Response code was ", httr::status_code(resp)))
+  }
 
   parsed <- parse_response(resp)
 

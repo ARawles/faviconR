@@ -13,3 +13,9 @@ url_image <- function(url) {
     url = url
   )
 }
+
+
+remove_null_list <- function(...) {
+  raw_list <- list(...)
+  plyr::compact(raw_list)
+}
