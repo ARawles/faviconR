@@ -13,3 +13,4 @@ Imports:
     openssl,
     fs,
     plyr
+RoxygenNote: 7.1.0
