@@ -7,7 +7,7 @@ navbar:
   structure:
     left: [home, intro, reference, changelog]
     right: [github, arawles]
-  title: BMRSr
+  title: faviconGeneratoR
   components:
     arawles:
       icon: "fa-address-card"
