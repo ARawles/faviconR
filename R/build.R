@@ -108,6 +108,7 @@ build_settings <- function(compression = c("0", "1", "2", "3", "4", "5"),
 }
 
 #' Build the versioning part of the request
+#'
 #' This function helps with the creation of the versioning list used in the API request.
 #' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @param versioning logical; whether to version the files
