@@ -1,4 +1,4 @@
-Package: faviconGeneratoR
+Package: faviconR
 Type: Package
 Title: Wrapper Functions to the 'realfavicongenerator.net API'
 Version: 0.1.0

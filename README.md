@@ -1,25 +1,25 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# faviconGeneratoR <a href='http://favicongenerator.arawles.co.uk'><img src='man/figures/logo.png' align="right" height="139" /></a>
+# faviconR <a href='http://faviconr.arawles.co.uk'><img src='man/figures/logo.png' align="right" height="139" /></a>
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of faviconGeneratoR is to provide some simple wrapper functions
-to the [realfavicongenerator.net](https://www.realfavicongenerator.net)
-API. This allows you to create favicons for lots of different platforms
-from local or online images.
+The goal of faviconR is to provide some simple wrapper functions to the
+[realfavicongenerator.net](https://www.realfavicongenerator.net) API.
+This allows you to create favicons for lots of different platforms from
+local or online images.
 
 ## Installation
 
-Currently, faviconGeneratoR is only available from GitHub. To install,
-use the `devtools` package:
+Currently, faviconR is only available from GitHub. To install, use the
+`devtools` package:
 
 ``` r
 # install.packages("devtools")
-devtools::install_github("ARawles/faviconGeneratoR")
+devtools::install_github("ARawles/faviconR")
 ```
 
 ## Example
