@@ -2,7 +2,7 @@
 #' Create iOS favicon parameters
 #'
 #' This function helps with the creation of the iOS parameter structure in the JSON request.
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @param picture_aspect character; one of 'no_change' or 'background_and_margin'.
 #' 'no_change' leaves the picture as is, 'background_and_margin' uses the background_color and
 #' margin parameters.
@@ -40,7 +40,7 @@ ios_helper <- function(picture_aspect = c("no_change", "background_and_margin"),
 }
 
 #'
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @export
 windows_helper <- function(picture_aspect = c("no_change", "white_silhouette"),
                     background_colour = list(),
@@ -68,7 +68,7 @@ windows_helper <- function(picture_aspect = c("no_change", "white_silhouette"),
 
 
 #'
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @export
 firefox_app_helper <- function(picture_aspect = c("no_change","circle", "rounded_square", "square"),
                         background_colour = NULL,
@@ -104,7 +104,7 @@ firefox_app_helper <- function(picture_aspect = c("no_change","circle", "rounded
 }
 
 
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @export
 android_chrome_helper <- function(picture_aspect = c("no_change", "background_and_margin", "shadow"),
                            manifest = list(
@@ -136,7 +136,7 @@ android_chrome_helper <- function(picture_aspect = c("no_change", "background_an
 }
 
 
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @export
 safari_pinned_tab_helper <- function(picture_aspect = c("no_change", "silhouette", "black_and_white"),
                               theme_color = NULL) {
@@ -147,7 +147,7 @@ safari_pinned_tab_helper <- function(picture_aspect = c("no_change", "silhouette
 }
 
 
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 coast_helper <- function(picture_aspect = c("no_change", "background_and_margin"),
                   margin = NULL,
                   background_color = NULL) {
@@ -159,7 +159,7 @@ coast_helper <- function(picture_aspect = c("no_change", "background_and_margin"
                    background_color = background_color)
 }
 
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @export
 open_graph_helper <- function(picture_aspect = c("no_change", "background_and_margin"),
                        margin = NULL,
@@ -176,7 +176,7 @@ open_graph_helper <- function(picture_aspect = c("no_change", "background_and_ma
 }
 
 
-#' Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @export
 yandex_browser_helper <- function(background_color = NULL,
                            manifest = list(

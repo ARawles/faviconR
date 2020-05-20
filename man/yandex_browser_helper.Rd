@@ -2,7 +2,7 @@
 % Please edit documentation in R/parameters.R
 \name{yandex_browser_helper}
 \alias{yandex_browser_helper}
-\title{Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)}
+\title{Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
 \usage{
 yandex_browser_helper(
   background_color = NULL,
@@ -11,5 +11,5 @@ yandex_browser_helper(
 )
 }
 \description{
-Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 }

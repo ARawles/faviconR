@@ -33,5 +33,5 @@ are 'ios6_and_prior_icons', 'ios7_and_later_icons', 'precomposed_icons' and 'dec
 }
 \description{
 This function helps with the creation of the iOS parameter structure in the JSON request.
-Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 }

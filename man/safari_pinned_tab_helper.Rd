@@ -2,7 +2,7 @@
 % Please edit documentation in R/parameters.R
 \name{safari_pinned_tab_helper}
 \alias{safari_pinned_tab_helper}
-\title{Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)}
+\title{Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
 \usage{
 safari_pinned_tab_helper(
   picture_aspect = c("no_change", "silhouette", "black_and_white"),
@@ -10,5 +10,5 @@ safari_pinned_tab_helper(
 )
 }
 \description{
-Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 }

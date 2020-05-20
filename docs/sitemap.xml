@@ -4,6 +4,9 @@
     <loc>http://favicongenerator.arawles.co.uk/index.html</loc>
   </url>
   <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/android_chrome_helper.html</loc>
+  </url>
+  <url>
     <loc>http://favicongenerator.arawles.co.uk/reference/build_favicon_design.html</loc>
   </url>
   <url>
@@ -13,15 +16,54 @@
     <loc>http://favicongenerator.arawles.co.uk/reference/build_master_picture.html</loc>
   </url>
   <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/coast_helper.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/firefox_app_helper.html</loc>
+  </url>
+  <url>
     <loc>http://favicongenerator.arawles.co.uk/reference/generate_favicon.html</loc>
   </url>
   <url>
     <loc>http://favicongenerator.arawles.co.uk/reference/get_api_key.html</loc>
   </url>
   <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/ios_helper.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/local_image.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/open_graph_helper.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/parse_response.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/remove_null_list.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/safari_pinned_tab_helper.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/save_file.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/send_request.html</loc>
+  </url>
+  <url>
     <loc>http://favicongenerator.arawles.co.uk/reference/set_api_key.html</loc>
   </url>
   <url>
     <loc>http://favicongenerator.arawles.co.uk/reference/unset_api_key.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/url_image.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/windows_helper.html</loc>
+  </url>
+  <url>
+    <loc>http://favicongenerator.arawles.co.uk/reference/yandex_browser_helper.html</loc>
   </url>
 </urlset>

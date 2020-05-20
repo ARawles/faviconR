@@ -2,7 +2,7 @@
 % Please edit documentation in R/parameters.R
 \name{android_chrome_helper}
 \alias{android_chrome_helper}
-\title{Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)}
+\title{Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}}
 \usage{
 android_chrome_helper(
   picture_aspect = c("no_change", "background_and_margin", "shadow"),
@@ -14,5 +14,5 @@ android_chrome_helper(
 )
 }
 \description{
-Further details can be found in the [realfavicongenerator.net API documentation](https://realfavicongenerator.net/api/non_interactive_api)
+Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 }
