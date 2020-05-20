@@ -6,9 +6,6 @@ save_file <- function(url, save_loc) {
   tryCatch({
     saved <- utils::unzip(tmp, exdir = save_loc)
   },
-  warning = function(e) {
-    stop("Your logo file couldn't be processed and may be corrupt.", call. = FALSE)
-  },
   error = function(e) {
     stop("Your logo file couldn't be processed and may be corrupt.", call. = FALSE)
   })
