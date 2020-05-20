@@ -1,6 +1,7 @@
 #' Build the complete JSON request
 #'
 #' Builds the final JSON request from its constituent parts.
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @param api_key character; API key from realfavicongenerator.net
 #' @param master_picture list; list produced by the \code{build_master_picture()} function that
 #' includes the image or link to image
@@ -46,6 +47,7 @@ build_master_picture <- function(type, value) {
 #'
 #' This function helps with the creation of the 'favicon_design' section of the request. In turn, this function is fed by
 #' a number of other helper functions designed for each platform.
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 #' @param ios list; list of ios parameters. Most easily created using the \code{ios_helper()} function.
 #' @param windows list; list of ios parameters. Most easily created using the \code{windows_helper()} function.
 #' @param firefox_app list; list of ios parameters. Most easily created using the \code{firefox_app_helper()} function.
@@ -73,7 +75,18 @@ build_favicon_design <- function(ios = ios_helper(), windows = windows_helper(),
   )
 }
 
+#' Build the settings part of the request
 #'
+#' This function helps with the creation of the settings list used in the API request.
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
+#' @param compression character; 1-5 level of compression (5 = higest)
+#' @param scaling_algorithm character; which scaling algorithm to use. One of "Mitchell", "NearestNeighbor", "Cubic", "Bilinear", "Lanczos", "Spline"
+#' @param error_on_image_too_small logical; whether to error if an icon cannot be produced because the image is too small
+#' @param readme_file logical; whether to inclued a README.md file to summarise the package manual installation steps
+#' @param html_code_file logical; whether to generate a html_code.html file which contains the icons' HTML markups
+#' @param use_path_as_is logical; FALSE lets RealFaviconGenerator decide the paths for you. TRUE forces RealFaviconGenerator to insert
+#' the path everywhere. Refer to the \href{https://realfavicongenerator.net/api/non_interactive_api}{API documentation} for more.
+#' @export
 build_settings <- function(compression = c("0", "1", "2", "3", "4", "5"),
                            scaling_algorithm = c("Mitchell", "NearestNeighbor", "Cubic", "Bilinear", "Lanczos", "Spline"),
                            error_on_image_too_small = TRUE,
@@ -94,6 +107,13 @@ build_settings <- function(compression = c("0", "1", "2", "3", "4", "5"),
 
 }
 
+#' Build the versioning part of the request
+#' This function helps with the creation of the versioning list used in the API request.
+#' Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
+#' @param versioning logical; whether to version the files
+#' @param param_name character; versioning prefix. Only used if 'versioning' is TRUE
+#' @param param_value character; version. Only used if 'versioning' is TRUE
+#' @export
 build_versioning <- function(versioning = FALSE,
                              param_name = NULL,
                              param_value = NULL) {

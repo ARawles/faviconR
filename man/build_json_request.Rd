@@ -31,4 +31,5 @@ list; list containing the complete request to be converted to JSON and posted
 }
 \description{
 Builds the final JSON request from its constituent parts.
+Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 }

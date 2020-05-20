@@ -38,4 +38,5 @@ list; complete list of favicon parameters for each platform.
 \description{
 This function helps with the creation of the 'favicon_design' section of the request. In turn, this function is fed by
 a number of other helper functions designed for each platform.
+Further details can be found in the \href{https://realfavicongenerator.net/api/non_interactive_api}{realfavicongenerator.net API documentation}
 }

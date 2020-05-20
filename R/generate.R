@@ -21,8 +21,8 @@
 #' versioning = build_versioning())
 #' }
 generate_favicon <- function(image, save_loc, api_key = NULL,
-                               override_type = NULL, favicon_design = build_favicon_design(),
-                               settings = build_settings(), versioning = build_versioning()) {
+                             override_type = NULL, favicon_design = build_favicon_design(),
+                             settings = build_settings(), versioning = build_versioning()) {
   if (is.null(api_key)) {
     api_key <- get_api_key()
   }
@@ -39,19 +39,21 @@ generate_favicon <- function(image, save_loc, api_key = NULL,
 
   image_type <- tools::file_ext(image)
 
-  if (image_type != "svg" & !is.null(favicon_design$safari_pinned_tab)) {
-    warning("File must be an SVG for safari_pinned_tab favicon. Removing safari_pinned_tab section of request.")
-    favicon_design$safari_pinned_tab <- NULL
+  if (!is.null(favicon_design$safari_pinned_tab)) {
+    if (image_type != "svg" & favicon_design$safari_pinned_tab$picture_aspect == "no_change") {
+      warning("File must be an SVG for safari_pinned_tab favicon. Removing safari_pinned_tab section of request.")
+      favicon_design$safari_pinned_tab <- NULL
+    }
   }
 
   json_request <- build_json_request(api_key = api_key,
-                     master_picture = build_master_picture(
-                       type = type,
-                       value = image
-                     ),
-                     favicon_design = favicon_design,
-                     settings = settings,
-                     versioning = versioning
+                                     master_picture = build_master_picture(
+                                       type = type,
+                                       value = image
+                                     ),
+                                     favicon_design = favicon_design,
+                                     settings = settings,
+                                     versioning = versioning
   )
 
   resp <- send_request(json_request)
