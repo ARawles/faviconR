@@ -2,8 +2,8 @@ pandoc: 2.7.2
 pkgdown: 1.5.1
 pkgdown_sha: ~
 articles: []
-last_built: 2020-05-20T09:37Z
+last_built: 2020-05-20T09:48Z
 urls:
-  reference: http://bmrsr.arawles.co.uk/reference
-  article: http://bmrsr.arawles.co.uk/articles
+  reference: http://favicongenerator.arawles.co.uk/reference
+  article: http://favicongenerator.arawles.co.uk/articles
 
