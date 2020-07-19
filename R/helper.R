@@ -109,7 +109,9 @@ firefox_app_helper <- function(picture_aspect = c("no_change","circle", "rounded
 ) {
 
   picture_aspect <- match.arg(picture_aspect)
-  on_conflict <- match.arg(on_conflict)
+  if (exists("manifest")) {
+    manifest$on_conflict <- match.arg(manifest$on_conflict, choices = c("raise_error", "override", "keep_existing"))
+  }
 
   if (picture_aspect == "circle" & (is.null(background_colour) | is.null(margin))) {
     error("background_colour and margin parameters must not be null when picture_aspect is 'circle'")
@@ -160,9 +162,10 @@ android_chrome_helper <- function(picture_aspect = c("no_change", "background_an
                                   )
 ) {
   picture_aspect <- match.arg(picture_aspect)
-  on_conflict <- match.arg(on_conflict)
+
   if (exists("manifest")) {
     manifest$display <- match.arg(manifest$display, choices = c("browser", "standalone"))
+    manifest$on_conflict <- match.arg(manifest$on_conflict, choices = c("raise_error", "override", "keep_existing"))
     if (manifest$display == "standalone") {
       manifest$orientation <- match.arg(manifest$orientation, choices = c("portrait", "landscape"))
     } else {
